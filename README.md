@@ -1,16 +1,37 @@
-# React + Vite
+# Tip Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive tip and bill-splitting calculator built with React. Users can enter a bill amount, choose a preset or custom tip percentage, and divide the total across multiple people in real time.
 
-Currently, two official plugins are available:
+🔗 **[Live Demo]** https://tip-calculator-virid.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Real-Time Calculation:** Instantly computes the tip amount and total per person as inputs change.
+- **Custom & Preset Tips:** Supports quick-select percentages (e.g., 5%, 10%, 15%, 25%, 50%) alongside a custom tip input.
+- **Input Validation:** Prevents invalid inputs such as zero people or negative bill amounts.
+- **One-Click Reset:** Clears all fields and restores default values.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework:** [React](https://react.dev) (with Hooks: `useState`)
+- **Build Tool:** [Vite](https://vite.dev) 
+- **Styling:** Vanilla CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/OkIbrahim/TipCalculator.git
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+- Managing derived state without redundant `useEffect` hooks.
+- Handling edge cases in controlled numeric inputs (e.g., `NaN` or division by zero).
